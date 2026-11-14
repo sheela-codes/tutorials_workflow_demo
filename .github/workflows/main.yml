@@ -33,11 +33,11 @@ jobs:
       - run: echo Entering Django CI/CD Pipeline!
       
       # Uses the action setup-python@v2, specifying version 3.9
-      # This installs Python 3.9 to the runner environment
-      - name: Set up Python 3.9
+      # This installs Python 3.11 to the runner environment
+      - name: Set up Python 3.11
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9         
+          python-version: 3.11         
       # Runs a set of commands to install dependencies in the runner environment
       - name: Install dependencies
         run: |
